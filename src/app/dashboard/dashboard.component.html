@@ -1,0 +1,24 @@
+<main *ngIf="accountData" class="account-info">
+    <section class="user-details">
+        <h2>User Details</h2>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <p><strong>Account Holder Name:</strong> {{ accountData.accountHolderName }}</p>
+        <p><strong>Date of Birth:</strong> {{ accountData.dob | date:'mediumDate' }}</p>
+        <p><strong>Contact Email:</strong> <a href="mailto:{{ accountData.contactEmail }}">{{ accountData.contactEmail }}</a></p>
+        <p><strong>Contact Phone:</strong> <a href="tel:{{ accountData.contactPhone }}">{{ accountData.contactPhone }}</a></p>
+    </section>
+
+    <section class="account-details">
+        <h2>Account Details</h2>
+        <p><strong>Account Holder Name:</strong> {{ accountData.accountHolderName }}</p>
+        <p><strong>Account Number:</strong> {{ accountData.accountNumber }}</p>
+        <p><strong>Balance:</strong> {{ accountData.balance | currency:accountData.currency }}</p>
+        <p><strong>Last Transaction Date:</strong> {{ accountData.lastTransactionDate | date:'mediumDate' }}</p>
+        <p><strong>Account Type:</strong> {{ accountData.accountType }}</p>
+        <p><strong>Interest Rate:</strong> {{ accountData.interestRate }}%</p>
+        <p><strong>Branch Name:</strong> {{ accountData.branchName }}</p>
+        <p><strong>Branch Code:</strong> {{ accountData.branchCode }}</p>
+        <p><strong>Account Status:</strong> {{ accountData.accountStatus }}</p>
+        <p><strong>Creation Date:</strong> {{ accountData.creationDate | date:'mediumDate' }}</p>
+    </section>
+</main>

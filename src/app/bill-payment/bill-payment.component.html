@@ -1,0 +1,22 @@
+<main>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <section class="available">
+        <h2>Available Bill Payment Providers</h2>
+        <div *ngFor="let provider of filteredProviders" class="provider-container">
+            <h3>{{provider.name}}</h3>
+            <div>{{provider.description}}</div>
+            <button (click)="updateProvider($event)" [id]="provider.id">Register for Service</button>
+        </div>
+    </section>
+    <section class="registered">
+        <h2>Registered Bill Payment Providers</h2>
+        <div *ngIf="filteredProviders2.length === 0" class="placeholder-message">
+            No services have been registered.
+        </div>
+        <div *ngFor="let provider of filteredProviders2" class="provider-container">
+            <h3>{{provider.name}}</h3>
+            <div>{{provider.description}}</div>
+            <button (click)="updateProvider($event)" [id]="provider.id" class="unregister-button">Unregister</button>
+        </div>
+    </section>
+</main>

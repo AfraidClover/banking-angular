@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* Header Styles */
+  header {
+    padding: 10px;
+    color: rgb(34, 34, 111);
+  }
+  
+  /* Background for the top section containing the image and h1 */
+  .top-section {
+    background-color: #f1f1f1; /* Background color for the top section */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .top-section img {
+    margin-right: 10px;
+  }
+  
+  .top-section h1 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+  }
+  
+  /* Background for the navigation bar */
+  nav {
+    background-color: rgb(34, 34, 111);/* Background color for the navigation bar */
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 50px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none; 
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
